@@ -1,0 +1,10 @@
+STEPS TO ADD BUILDINGS( IGNORE THIS FILE )
+
+1. add image to buildings.txt file
+2. change BUILDINGS +1
+3. add comment of building #
+4. add another line in buildings loop
+5. make building function
+6. Add to move()
+7. Add to MothershipContact()
+8. change aura/scale as needed

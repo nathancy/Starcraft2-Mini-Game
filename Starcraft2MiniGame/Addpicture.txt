@@ -1,0 +1,9 @@
+STEPS TO ADD PICTURES( IGNORE THIS FILE )
+
+1. add image to units.txt file
+2. change UNITS +1
+3. add comment of unit #
+4. add another line in units loop
+5. make unit function
+6. add unit in special aura section
+7. change aura/scale as needed
