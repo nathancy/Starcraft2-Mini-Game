@@ -767,10 +767,10 @@ public class Units {
 	{
 		deadTriggers();
 		
-		EZ.addImage("cloudaura.png", getXCenter(), getYCenter());
-		EZ.addImage("bluering.png", getXCenter(), getYCenter());
-		EZ.addImage("portal.png", getXCenter(), getYCenter());
-		EZ.addImage("diablo.png", getXCenter(), getYCenter());
+		EZ.addImage("images/cloudaura.png", getXCenter(), getYCenter());
+		EZ.addImage("images/bluering.png", getXCenter(), getYCenter());
+		EZ.addImage("images/portal.png", getXCenter(), getYCenter());
+		EZ.addImage("images/diablo.png", getXCenter(), getYCenter());
 	}
 	
 	//Ultra hit
@@ -778,7 +778,7 @@ public class Units {
 	{
 		deadTriggers();
 	
-		EZ.addImage("babyultra.png", getXCenter(), getYCenter());
+		EZ.addImage("images/babyultra.png", getXCenter(), getYCenter());
 		
 	}
 	

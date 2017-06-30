@@ -166,16 +166,16 @@ public class Buildings {
 		//Play sound and add pictures
 		sound.play();
 
-		EZImage pylon1 = EZ.addImage("Pylon.png",60,310);
-		EZImage pylon2 = EZ.addImage("Pylon.png",210,370);
-		EZImage pylon3 = EZ.addImage("Pylon.png",200,560);
-		EZImage pylon4 = EZ.addImage("pylonexplode.png",100,450);
+		EZImage pylon1 = EZ.addImage("images/Pylon.png",60,310);
+		EZImage pylon2 = EZ.addImage("images/Pylon.png",210,370);
+		EZImage pylon3 = EZ.addImage("images/Pylon.png",200,560);
+		EZImage pylon4 = EZ.addImage("images/pylonexplode.png",100,450);
 
 		//Pause and add more explosion pictures
 		EZ.pause(1700);
-		EZImage pylon5 = EZ.addImage("pylonexplode.png",60,310);
-		EZImage pylon6 = EZ.addImage("pylonexplode.png",210,370);
-		EZImage pylon7 = EZ.addImage("pylonexplode.png",200,560);
+		EZImage pylon5 = EZ.addImage("images/pylonexplode.png",60,310);
+		EZImage pylon6 = EZ.addImage("images/pylonexplode.png",210,370);
+		EZImage pylon7 = EZ.addImage("images/pylonexplode.png",200,560);
 			
 		EZ.pause(1000);
 			
@@ -194,9 +194,9 @@ public class Buildings {
 	{
 		//Play sound and add pictures
 		sound.play();
-		EZImage hatch1 = EZ.addImage("supergreennutsaura.png", 620, 410);
-		EZImage hatch2 = EZ.addImage("unburied.png", 650, 400);
-		EZImage hatch3 = EZ.addImage("lightning.png", 575, 275);
+		EZImage hatch1 = EZ.addImage("images/supergreennutsaura.png", 620, 410);
+		EZImage hatch2 = EZ.addImage("images/unburied.png", 650, 400);
+		EZImage hatch3 = EZ.addImage("images/lightning.png", 575, 275);
 		
 		//Pause
 		EZ.pause(2000);
@@ -210,7 +210,7 @@ public class Buildings {
 	//If mothership hits nexus
 	public void nexushit()
 	{
-		EZImage nexus1 = EZ.addImage("nexusexplosion.png", 435, 225);
+		EZImage nexus1 = EZ.addImage("images/nexusexplosion.png", 435, 225);
 		
 		//Play nexus explosion sound
 		sound.play();
@@ -224,13 +224,13 @@ public class Buildings {
 	public void cavernhit()
 	{
 		//Spawn zergling and troll zergling
-		EZImage cavern1 = EZ.addImage("ling.png", 1000, 100);
+		EZImage cavern1 = EZ.addImage("images/ling.png", 1000, 100);
 
 		//Add zergling sound and picture
-		EZSound zergling = EZ.addSound("zergling.wav");
+		EZSound zergling = EZ.addSound("sounds/zergling.wav");
 		zergling.play();
 		
-		EZImage cavern2 = EZ.addImage("trollling.png", 1050, 100);
+		EZImage cavern2 = EZ.addImage("images/trollling.png", 1050, 100);
 
 		cavern2.scaleTo(1.6);
 		EZ.pause(1000);	
@@ -243,13 +243,13 @@ public class Buildings {
 	public void cchit()
 	{
 		//Add nuke picture and play sound
-		EZImage cc1 = EZ.addImage("nuke.png", 600, 780);
-		EZImage cc2 = EZ.addImage("thor.png", 450, 560);
+		EZImage cc1 = EZ.addImage("images/nuke.png", 600, 780);
+		EZImage cc2 = EZ.addImage("images/thor.png", 450, 560);
 		sound.play();
 		
 		EZ.pause(1700);
 	
-		EZImage cc3 = EZ.addImage("explosion1.png", 600, 780);
+		EZImage cc3 = EZ.addImage("images/explosion1.png", 600, 780);
 		EZ.pause(2000);
 
 		EZ.removeEZElement(cc1);
@@ -354,7 +354,7 @@ public class Buildings {
 		sound.play();
 		
 		//Add blood picture
-		EZImage stasiscell1 = EZ.addImage("blood.png", 1125, 800);
+		EZImage stasiscell1 = EZ.addImage("images/blood.png", 1125, 800);
 		
 		EZ.pause(1700);
 		EZ.removeEZElement(stasiscell1);

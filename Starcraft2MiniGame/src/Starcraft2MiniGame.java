@@ -16,7 +16,7 @@ public class Starcraft2MiniGame {
 		
 		//Initialize environment
 		EZ.initialize(1750, 1000);
-		EZ.addImage("sidebackground.jpg", 1650, 500);
+		EZ.addImage("images/sidebackground.jpg", 1650, 500);
 		
 		//Add scoreboard and side texts
 		EZText text = EZ.addText(1625, 75, "SCORE: 0", Color.white, 20);
@@ -25,29 +25,29 @@ public class Starcraft2MiniGame {
 		EZ.addText(1625, 500, "Press '2' for leviathan", Color.white, 15);
 		EZ.addText(1625, 750, "Press '3' for mothership", Color.white, 15);
 		EZ.addText(1600, 200, "Press 'k' to shoot", Color.white, 15);
-		EZImage side_projectile = EZ.addImage("tempestball.png", 1700, 200);
+		EZImage side_projectile = EZ.addImage("images/tempestball.png", 1700, 200);
 		
 		//Add background map 
-		EZ.addImage("cloudmap.jpg", 750, 500);
+		EZ.addImage("images/cloudmap.jpg", 750, 500);
 	
 		//Add background sounds/trigger sounds
-		EZSound warp = EZ.addSound("warpfield.wav");
-		EZSound thunder = EZ.addSound("thunder.wav");
-		EZSound bgm1 = EZ.addSound("terran-23.wav");
-		EZSound bgm2 = EZ.addSound("terran1.wav");
-		EZSound victory = EZ.addSound("victory.wav");
-		EZSound defeat = EZ.addSound("defeat.wav");
+		EZSound warp = EZ.addSound("sounds/warpfield.wav");
+		EZSound thunder = EZ.addSound("sounds/thunder.wav");
+		EZSound bgm1 = EZ.addSound("sounds/terran-23.wav");
+		EZSound bgm2 = EZ.addSound("sounds/terran1.wav");
+		EZSound victory = EZ.addSound("sounds/victory.wav");
+		EZSound defeat = EZ.addSound("sounds/defeat.wav");
 		bgm1.loop();
 		
 		//Setting frame rate
 		EZ.setFrameRate(90);
 	
 		//Initalize auras for side panel
-		Units sideAuras = new Units("mothershipaura.png");
-		Units teleportAuras = new Units("tealblueaura.png", 1);
+		Units sideAuras = new Units("images/mothershipaura.png");
+		Units teleportAuras = new Units("images/tealblueaura.png", 1);
 		
 		//Initalize mothership
-		Units mothership = new Units("mothership.png", "mothershipaura.png", "mothershipaura2.png", "bccontrolunit.png", "leviathan.png", "tempestball.png",200, 100);
+		Units mothership = new Units("images/mothership.png", "images/mothershipaura.png", "images/mothershipaura2.png", "images/bccontrolunit.png", "images/leviathan.png", "images/tempestball.png",200, 100);
 		mothership.scaleAura(9);
 		
 		//Scan building file
@@ -221,7 +221,7 @@ public class Starcraft2MiniGame {
 				//If lose
 				if(gamescore == 0)
 				{
-					EZ.addImage("gameover.JPG", 750, 500);
+					EZ.addImage("images/gameover.JPG", 750, 500);
 					defeat.play();
 					EZ.pause(4500);
 					System.exit(1);
@@ -310,8 +310,8 @@ public class Starcraft2MiniGame {
 		//If win(player collects all objects)
 		if(unitscore == UNITS && win == false)
 		{
-			EZ.addImage("blackbackground.jpg", 750, 500);
-			EZ.addImage("victory1.jpg", 750, 500);
+			EZ.addImage("images/blackbackground.jpg", 750, 500);
+			EZ.addImage("images/victory1.jpg", 750, 500);
 			victory.play();
 			win = true;	
 		}
