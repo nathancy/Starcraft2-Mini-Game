@@ -1,3 +1,11 @@
+/* ******************************
+ *
+ * File: Starcraft2MiniGame.java
+ *
+ * Main game driver
+ *
+ * *************************** */
+
 import java.awt.Color;
 import java.lang.String;
 import java.io.*;
